@@ -15,7 +15,37 @@
 		55347A68296CE51E009801A7 /* SwiftCal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 55347A66296CE51E009801A7 /* SwiftCal.xcdatamodeld */; };
 		55347A6F296F76BF009801A7 /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55347A6E296F76BF009801A7 /* Date+Ext.swift */; };
 		55347A71296FB2F7009801A7 /* StreakView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55347A70296FB2F7009801A7 /* StreakView.swift */; };
+		55347A792970C400009801A7 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55347A782970C3FF009801A7 /* WidgetKit.framework */; };
+		55347A7B2970C400009801A7 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55347A7A2970C400009801A7 /* SwiftUI.framework */; };
+		55347A7E2970C400009801A7 /* SwiftCalWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55347A7D2970C400009801A7 /* SwiftCalWidgetBundle.swift */; };
+		55347A802970C400009801A7 /* SwiftCalWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55347A7F2970C400009801A7 /* SwiftCalWidget.swift */; };
+		55347A822970C402009801A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55347A812970C402009801A7 /* Assets.xcassets */; };
+		55347A862970C402009801A7 /* SwiftCalWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 55347A762970C3FF009801A7 /* SwiftCalWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		55347A842970C402009801A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55347A50296CE51D009801A7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55347A752970C3FF009801A7;
+			remoteInfo = SwiftCalWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		55347A8A2970C402009801A7 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				55347A862970C402009801A7 /* SwiftCalWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		55347A58296CE51E009801A7 /* SwiftCal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftCal.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -27,6 +57,15 @@
 		55347A67296CE51E009801A7 /* SwiftCal.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftCal.xcdatamodel; sourceTree = "<group>"; };
 		55347A6E296F76BF009801A7 /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
 		55347A70296FB2F7009801A7 /* StreakView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreakView.swift; sourceTree = "<group>"; };
+		55347A762970C3FF009801A7 /* SwiftCalWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SwiftCalWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		55347A782970C3FF009801A7 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		55347A7A2970C400009801A7 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		55347A7D2970C400009801A7 /* SwiftCalWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftCalWidgetBundle.swift; sourceTree = "<group>"; };
+		55347A7F2970C400009801A7 /* SwiftCalWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftCalWidget.swift; sourceTree = "<group>"; };
+		55347A812970C402009801A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		55347A832970C402009801A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55347A8B2970C45C009801A7 /* SwiftCal.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftCal.entitlements; sourceTree = "<group>"; };
+		55347A8C2970C4B0009801A7 /* SwiftCalWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftCalWidgetExtension.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,13 +76,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		55347A732970C3FF009801A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55347A7B2970C400009801A7 /* SwiftUI.framework in Frameworks */,
+				55347A792970C400009801A7 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		55347A4F296CE51D009801A7 = {
 			isa = PBXGroup;
 			children = (
+				55347A8C2970C4B0009801A7 /* SwiftCalWidgetExtension.entitlements */,
 				55347A5A296CE51E009801A7 /* SwiftCal */,
+				55347A7C2970C400009801A7 /* SwiftCalWidget */,
+				55347A772970C3FF009801A7 /* Frameworks */,
 				55347A59296CE51E009801A7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				55347A58296CE51E009801A7 /* SwiftCal.app */,
+				55347A762970C3FF009801A7 /* SwiftCalWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -59,6 +111,7 @@
 		55347A5A296CE51E009801A7 /* SwiftCal */ = {
 			isa = PBXGroup;
 			children = (
+				55347A8B2970C45C009801A7 /* SwiftCal.entitlements */,
 				55347A5B296CE51E009801A7 /* SwiftCalApp.swift */,
 				55347A5D296CE51E009801A7 /* CalendarView.swift */,
 				55347A70296FB2F7009801A7 /* StreakView.swift */,
@@ -79,6 +132,26 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		55347A772970C3FF009801A7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				55347A782970C3FF009801A7 /* WidgetKit.framework */,
+				55347A7A2970C400009801A7 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		55347A7C2970C400009801A7 /* SwiftCalWidget */ = {
+			isa = PBXGroup;
+			children = (
+				55347A7D2970C400009801A7 /* SwiftCalWidgetBundle.swift */,
+				55347A7F2970C400009801A7 /* SwiftCalWidget.swift */,
+				55347A812970C402009801A7 /* Assets.xcassets */,
+				55347A832970C402009801A7 /* Info.plist */,
+			);
+			path = SwiftCalWidget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -89,15 +162,34 @@
 				55347A54296CE51E009801A7 /* Sources */,
 				55347A55296CE51E009801A7 /* Frameworks */,
 				55347A56296CE51E009801A7 /* Resources */,
+				55347A8A2970C402009801A7 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				55347A852970C402009801A7 /* PBXTargetDependency */,
 			);
 			name = SwiftCal;
 			productName = SwiftCal;
 			productReference = 55347A58296CE51E009801A7 /* SwiftCal.app */;
 			productType = "com.apple.product-type.application";
+		};
+		55347A752970C3FF009801A7 /* SwiftCalWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55347A872970C402009801A7 /* Build configuration list for PBXNativeTarget "SwiftCalWidgetExtension" */;
+			buildPhases = (
+				55347A722970C3FF009801A7 /* Sources */,
+				55347A732970C3FF009801A7 /* Frameworks */,
+				55347A742970C3FF009801A7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftCalWidgetExtension;
+			productName = SwiftCalWidgetExtension;
+			productReference = 55347A762970C3FF009801A7 /* SwiftCalWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -110,6 +202,9 @@
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
 					55347A57296CE51E009801A7 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					55347A752970C3FF009801A7 = {
 						CreatedOnToolsVersion = 14.2;
 					};
 				};
@@ -128,6 +223,7 @@
 			projectRoot = "";
 			targets = (
 				55347A57296CE51E009801A7 /* SwiftCal */,
+				55347A752970C3FF009801A7 /* SwiftCalWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -139,6 +235,14 @@
 			files = (
 				55347A63296CE51E009801A7 /* Preview Assets.xcassets in Resources */,
 				55347A60296CE51E009801A7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55347A742970C3FF009801A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55347A822970C402009801A7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,7 +262,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		55347A722970C3FF009801A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55347A802970C400009801A7 /* SwiftCalWidget.swift in Sources */,
+				55347A7E2970C400009801A7 /* SwiftCalWidgetBundle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		55347A852970C402009801A7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 55347A752970C3FF009801A7 /* SwiftCalWidgetExtension */;
+			targetProxy = 55347A842970C402009801A7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		55347A69296CE51E009801A7 /* Debug */ = {
@@ -278,8 +399,10 @@
 		55347A6C296CE51E009801A7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SwiftCal/SwiftCal.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftCal/Preview Content\"";
@@ -307,8 +430,10 @@
 		55347A6D296CE51E009801A7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SwiftCal/SwiftCal.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftCal/Preview Content\"";
@@ -333,6 +458,62 @@
 			};
 			name = Release;
 		};
+		55347A882970C402009801A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = SwiftCalWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6JBM5ZNF6C;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftCalWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SwiftCalWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Swifttom.SwiftCal.SwiftCalWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		55347A892970C402009801A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = SwiftCalWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6JBM5ZNF6C;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftCalWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SwiftCalWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Swifttom.SwiftCal.SwiftCalWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -350,6 +531,15 @@
 			buildConfigurations = (
 				55347A6C296CE51E009801A7 /* Debug */,
 				55347A6D296CE51E009801A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55347A872970C402009801A7 /* Build configuration list for PBXNativeTarget "SwiftCalWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55347A882970C402009801A7 /* Debug */,
+				55347A892970C402009801A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
