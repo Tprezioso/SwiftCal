@@ -16,19 +16,11 @@ struct CalendarView: View {
         predicate: NSPredicate(format: "(date >= %@) AND (date <= %@)", Date().startOfCalendarWithPrefixDays as CVarArg, Date().endOfMonth as CVarArg),
         animation: .default)
     private var days: FetchedResults<Day>
-    let daysOfWeek = ["S", "M", "T", "W", "T", "F", "S"]
     
     var body: some View {
         NavigationView {
             VStack {
-                HStack {
-                    ForEach(daysOfWeek, id: \.self) { dayofWeek in
-                        Text(dayofWeek)
-                            .fontWeight(.black)
-                            .foregroundColor(.orange)
-                            .frame(maxWidth: .infinity)
-                    }
-                }
+                CalendarHeaderView()
                 LazyVGrid(columns: Array (repeating: GridItem(.flexible()), count: 7)) {
                     ForEach(days) { day in
                         if day.date!.monthInt != Date().monthInt {
